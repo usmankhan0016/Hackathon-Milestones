@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-div{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 4px;
+    /* padding: 1%; */
+}
+header{
+    width: 100%;
+    height: 150x;
+    padding: 1%;
+    background-color: rgb(152, 184, 128);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+header div{
+    padding-left: 30px;
+    color: white;
+}
+header img{
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+}
+.content-div{
+    width: 100%;
+    display: flex;
+}
+.left-section{
+    background-color: #f9f9f9;
+    width: 30%;
+    padding: 25px;
+    font-size: 16px;
+}
+.left-section h1,
+.left-section h2{
+    color: rgb(102, 156, 61);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(152, 184, 128, 0.8);
+    padding: 3%;
+    margin-bottom: 20px;
+}
+.objective{
+    margin-bottom: 25px;
+}
+
+.reference{
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.reference p{
+    padding-left: 5px;
+}
+.left-section .objective p{
+ text-align: justify;
+ hyphens: auto;
+ line-height: 20px;
+}
+.certifications-p{
+    line-height: 22px;
+}
+
+
+
+
+
+.contact h1,
+.education h1,
+.skills h1,
+.language h1,
+.experience h1{
+    color: rgb(152, 184, 128);
+    border-bottom: 1px solid ;
+    margin-bottom: 20px;
+}
+.contact p,
+.education p,
+.experience p{
+    line-height: 22px;
+}
+.contact,
+.education,
+.skills{
+    margin-bottom: 20px;
+}
+.skills ul{
+    padding-left: 16px;
+}
+.experience{
+    padding-bottom: 25px;
+}
+.right-section{
+    width: 70%;
+    padding-left: 50px;
+    background-color:white;
+}
+button{
+    padding: 12px 19px;
+    background-color: rgb(132, 175, 99);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer
+}
+button:hover{
+    background-color:rgb(130, 162, 105) ;
+}
+button:active{
+    opacity: 0.8;
+}
+/* class for the toggle button */
+.toggle-btn{
+    display: none;
+}
+
+@media ( max-width: 786px) {
+    .content-div{
+        flex-direction: column;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .right-section{
+        width: 100%;
+    }
+}
